@@ -1,0 +1,117 @@
+{
+    "moreli": {
+        "id": "9GICD0wi",
+        "senha": "data",
+        "professores": [
+            "maristela",
+            "joao",
+            "kawany"
+        ],
+        "avaliacoes": [
+            {
+                "0": "sim",
+                "1": "sim",
+                "2": "sim"
+            },
+            {
+                "0": "sim",
+                "1": "sim",
+                "2": "sim"
+            },
+            {
+                "0": "sim",
+                "1": "sim",
+                "2": "sim"
+            },
+            {
+                "0": "sim",
+                "1": "sim",
+                "2": "sim",
+                "professor": "pro1"
+            },
+            {
+                "0": "sim",
+                "1": "sim",
+                "2": "sim",
+                "professor": "kawany"
+            },
+            {
+                "0": "sim",
+                "1": "sim",
+                "2": "sim",
+                "professor": ""
+            },
+            {
+                "professor": ""
+            },
+            {
+                "0": "sim",
+                "1": "nao",
+                "2": "sim",
+                "professor": "maristela"
+            },
+            {
+                "0": "sim",
+                "1": "sim",
+                "2": "sim",
+                "professor": ""
+            },
+            {
+                "0": "sim",
+                "1": "sim",
+                "2": "nao",
+                "professor": "maristela"
+            },
+            {
+                "0": "sim",
+                "1": "nao",
+                "2": "nao",
+                "professor": ""
+            },
+            {
+                "0": "sim",
+                "1": "sim",
+                "2": "sim",
+                "professor": ""
+            },
+            {
+                "0": "sim",
+                "1": "sim",
+                "2": "sim",
+                "professor": ""
+            },
+            {
+                "0": "sim",
+                "1": "nao",
+                "2": "sim",
+                "3": "sim",
+                "4": "sim",
+                "professor": "maristela"
+            },
+            {
+                "0": "nao",
+                "1": "sim",
+                "2": "sim",
+                "3": "sim",
+                "4": "sim",
+                "professor": ""
+            },
+            {
+                "0": "sim",
+                "1": "sim",
+                "2": "sim",
+                "3": "sim",
+                "4": "sim",
+                "professor": ""
+            },
+            {
+                "0": "sim",
+                "1": "sim",
+                "2": "sim",
+                "3": "sim",
+                "4": "sim",
+                "professor": ""
+            }
+        ]
+    }
+}

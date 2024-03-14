@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Adicionando posição relativa para criar um contexto de posicionamento */
+    background-image: linear-gradient(to right, #27187E,#758BFD);
+}
+
+.question-container {
+    padding: 20px;
+    background-color: #F1F2F6;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+    text-align: center;
+    width: 80%;
+    max-width: 400px; /* Define a largura máxima da div */
+    position: relative; /* Adicionando posição relativa */
+    z-index: 1; /* Garante que fique na frente do círculo */
+}
+
+.perguntas{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #758BFD; /* Cor da fonte */
+
+    
+}
+.perguntas.finalizada{
+    background-color: #758BFD; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    text-align: center; /* Texto centralizado */
+}
+#buttons {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 3vh;
+	display: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #27187E;
+    color: #F1F2F6;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    margin: 0 10px; /* Adiciona margem entre os botões */
+}
+
+button:hover {
+    background-color: #2f3a8e;
+}
+
+.half-circle-bottom {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    width: 100%;
+    height: 200vh;
+    background-color: #F1F2F6;
+    clip-path: ellipse(120% 80% at 50% 0);
+    z-index: 0; /* Define o z-index para enviar o círculo para trás */
+}
+
+
+#professor{
+	padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+#btn-finalizar{
+    width: 150px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #27187E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    top: 10px;
+}
+#labelProf{
+    font-weight: bold;
+    font-size: 16px; /* Tamanho da fonte */
+    color: #27187E; /* Cor da fonte */
+	margin-bottom: 5px;
+}
+
+.animacao-texto {
+    animation: mudancaTexto 1s ease-in-out;
+}
+
+@keyframes mudancaTexto {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+.confete {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #AEB8FE; /* Cor do confete */
+    border-radius: 50%;
+    animation: confete-falling linear infinite;
+}
+
+@keyframes confete-falling {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 1;
+    }
+}
