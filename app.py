@@ -6,6 +6,7 @@ import string
 from bd.controllerBd import ControllerBd
 
 app = Flask("app")
+
 controllerBd = ControllerBd()
 pergunta = -1
 respostas = {}
