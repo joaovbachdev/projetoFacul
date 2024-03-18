@@ -31,7 +31,7 @@ function validaLogin(nome, senha){
 		}
 	});
 }
-function proximaPergunta(resposta){
+function proximaPergunta(resposta,){
 	texto = document.getElementById("pergunta")
 	$.ajax({
 		url:`/getPergunta?resposta=${resposta}`,
@@ -74,9 +74,32 @@ function salvaResultadoFinal(){
 		success:function(response){
 			console.log(response)
 			window.location.href = "/login"
+
 		},
 		error:function(erro){
 			console.log(erro)
 		}
 	});
 }
+
+var timer = 0
+function salvaAcao(acao, testes){
+	$.ajax({
+		url:'/salvaAcao',
+		type:'POST',
+		data:JSON.stringify({'acao':acao,'tempo':timer}),
+		contentType:'application/json',
+		success:function(response){
+			timer = 0
+			testesAutomaticos(testes)
+		},
+		error:function(error){
+			console.log(error)
+		}
+	})
+}
+
+function atualizaTimer(){
+	timer+=1
+}
+setInterval(atualizaTimer, 1000);

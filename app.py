@@ -110,4 +110,17 @@ def getProfessores():
 def resultadoFinal():
     salvaResultado(request.json['professor'])
     return "resultado salvo com sucesso"
+
+@app.route("/salvaAcao",methods=['POST'])
+def salvaAcao():
+    acao = request.json['acao']
+    with open('bd/acoes.json','r+') as f:
+        data = json.load(f)
+        data[str(len(data.keys()))] = acao + " apos: " + str(request.json['tempo']) + " segundos"
+        f.seek(0)
+        json.dump(data,f,indent=4)
+        f.truncate()
+    return "acao salva"
 app.run(host='0.0.0.0', debug=True)
+
+

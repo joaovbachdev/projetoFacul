@@ -11,8 +11,11 @@
 		<div id="confetes"></div>
 		<div id="container" class="question-container">
 			<h2 id="pergunta" class="perguntas">{{pergunta}}</h2>
-			<button id="btn-yes" onclick="proximaPergunta('sim')">Sim</button>
-			<button id="btn-no" onclick="proximaPergunta('nao')">Não</button>
+			<button id="btn-yes" onclick="proximaPergunta('sim'); salvaAcao('cliquei em sim',[{
+				'acao':'itemExiste',
+				'id':'btn-yes'
+			  }])">Sim</button>
+			<button id="btn-no" onclick="proximaPergunta('nao'); salvaAcao('cliquei em nao',[])">Não</button>
 			<div id="buttons">    
 				
 				<label for="professor" id="labelProf">responsavel:</label>
@@ -23,19 +26,21 @@
 					{% endfor %}
 				</select>
 	
-			<button id="btn-finalizar" onclick="salvaResultadoFinal()">Finalizar</button>
+			<button id="btn-finalizar" onclick="salvaResultadoFinal(); salvaAcao('cliquei em finalizar',[])">Finalizar</button>
 			</div>
 		</div>
 		<div class="half-circle-bottom"></div>
 
 		<script>
-			var bloquear = document.getElementById("container")
+			var bloquear = document.getElementsByTagName("body")[0]
 
 			bloquear.addEventListener('touchmove',function(event){
 				event.preventDefault();
 			},{passive:false});
 		</script>
 		<script src="/static/js/confetes.js"></script>
+		<script src="/static/js/controller.js"></script>
+
 
 	</body>
 </html>

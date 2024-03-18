@@ -1,8 +1,11 @@
 {
-	"0":"teste de pergunta para fazer para a crianca de teste testando o html do front end?",
-	"1":"testando o front para fazer perguntas quantos anos voce tem?",
-	"2":"com quantas pessoas voce mora em casa e sabe fazer o dever de casa?",
-	"3":"com quantas pessoas voce mora em casa e sabe fazer o dever de casa?",
-	"4":"com quantas pessoas voce mora em casa e sabe fazer o dever de casa?",
-	"5":"teste"
+	"0":"voce tem um melhor amigo ou amiga na escola?",
+	"1":"voce acha importante tratar os colegas com respeito?",
+	"2":"voce gosta dos seus amigos?",
+	"3":"voce gosta de brigas?",
+	"4":"voce ja brigou na escola?",
+	"5":"voce ja praticou bullyg?",
+	"6":"voce ja sofreu bullyng?",
+	"7":"voce tem medo da escola?",
+	"8":"voce tem medo de algum colega?"
 }
